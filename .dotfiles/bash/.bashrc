@@ -103,3 +103,4 @@ source $OSH/oh-my-bash.sh
 alias weather="curl wttr.in"
 alias configi3="nano ~/.config/i3/config"
 alias configbash="nano ~/.bashrc"
+alias cbt="/home/hyist/coding/bash/cbt.sh"
