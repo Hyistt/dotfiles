@@ -190,9 +190,9 @@ bar {
 }
 
 #Custom Keybinds
-#bindsym $mod+shift+y exec i3lock
+bindsym $mod+shift+y exec i3lock
 
-bindsym $mod+shift+y exec betterlockscreen -l dim
+#bindsym $mod+shift+y exec betterlockscreen -l dim
 
 #bindsym XF86MonBrightnessDown exec "brightnessctl s 100-; notify-sned 'brightness down'"
 #bindsym XF86MonBrightnessUp exec "brightnessctl s +100; notify-sned 'brightness up'"
@@ -204,10 +204,12 @@ bindsym XF86MonBrightnessDown light -U 10
 # decrease screen brightness
 
 #Startup Execute Commands
-exec_always feh --bg-fill /home/hyist/.walls/.walls/watermelon-chan.png
+exec_always feh --bg-fill /home/hyist/.walls/rinne.png
 exec volumeicon
+exec compton
+#exec --no-startup-id i3-msg; workspace $ws2; exec kitty
 
-#Start CLI File Explorer Ranger
+#Start Ranger
 bindsym $mod+shift+p workspace $ws4; exec kitty -e ranger
 
 #Start htop
@@ -232,5 +234,3 @@ bindsym $mod+p exec --no-startup-id powermenu
 
 # Alternative (set last used background)
 #exec --no-startup-id source ~/.fehbg
-
-
