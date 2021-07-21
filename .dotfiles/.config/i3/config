@@ -119,6 +119,10 @@ set $ws8 "8:八"
 set $ws9 "9:九"
 set $ws10 "10:十"
 
+# Set inner/outer gaps
+gaps inner 4
+gaps outer 3
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
